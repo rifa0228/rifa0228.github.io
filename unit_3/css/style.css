@@ -1,3 +1,4 @@
+
 hr{
 	width: 200px
 }
@@ -27,4 +28,7 @@ a{
 	text-decoration: none;
 	font-family: Calibri, san-serif;
 	color:#3E0CE8;
+}
+body{
+	background: url("https://imgur.com/a/3hLC4");
 }
