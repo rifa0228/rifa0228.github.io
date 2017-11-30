@@ -1,0 +1,30 @@
+hr{
+	width: 200px
+}
+#slogan{
+	font-style: italic;
+	text-align: center;
+}
+h1{
+	font-family: Calibri, san-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+	color: #1F3B06;
+
+}
+p{
+	font-family: Calibri, san-serif;
+	text-align: left;
+	font-size: 14px
+	color:#001200;
+}
+.list{
+	font-family: Calibri, san-serif;
+}
+a{
+	text-decoration: none;
+	font-family: Calibri, san-serif;
+	color:#3E0CE8;
+}
