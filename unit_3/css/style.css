@@ -1,34 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700');
 
 hr{
-	width: 200px
+	width: 160px;
 }
 #slogan{
-	font-style: italic;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 24px
+	line-height: 1.5em;
 	text-align: center;
 }
 h1{
-	font-family: Calibri, san-serif;
+	font-family: 'Titillium Web', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 50px;
 	font-weight: bold;
 	color: #1F3B06;
-
 }
 p{
-	font-family: Calibri, san-serif;
+	font-family: 'Titillium Web', sans-serif;
 	text-align: left;
 	font-size: 14px
-	color:#001200;
+	color:#FFFFFF;
 }
 .list{
-	font-family: Calibri, san-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 a{
 	text-decoration: none;
-	font-family: Calibri, san-serif;
+	font-weight: bold;
+	font-family: 'Titillium Web', sans-serif;
 	color:#3E0CE8;
 }
-body{
-	background: url("https://imgur.com/a/3hLC4");
-}
+
+body{background: url("https://i.imgur.com/ICDgwow.jpg");
+	background-size: cover;	
+	background-color: rgba(0,0,0,.5);
+	position: relative;
+	top: 10;
+	bottom: 0;
+	height: 90vh
+	z-index: -10;}
+	
+
+
