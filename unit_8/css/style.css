@@ -1,7 +1,6 @@
 body{
 	font-family: Tahoma, Arial, sans-serif;
 	font-size: 16px;
-	line-height: auto;
 	padding: 0;
 	margin:0;
 	background-color: #f4f4f4;
@@ -9,7 +8,7 @@ body{
 
 /*Global*/
 .container{
-	width: 80%;
+	width: 960px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -87,7 +86,8 @@ header a:hover{
 
 #showcase{
 	min-height: 400px;
-	background: url('../images/DSC_4458a.jpg'); no-repeat 0 -400px;
+	background: url('../images/DSC_4458a.jpg')no-repeat;
+	background-size: cover;
 	text-align: center;
 	color: #000;
 }
@@ -96,6 +96,7 @@ header a:hover{
 	margin-top: 100px;
 	font-size: 2.4em;
 	margin-bottom: 10px;
+	color: #0f4c02
 }
 
 #showcase p{
@@ -113,10 +114,11 @@ header a:hover{
 	text-align: center;
 	width: 30%;
 	padding:10px;
+	display: block;
 }
 
 #boxes .box img{
-	width: 110%;
+	width: 30%;
 }
 
 /*Mailinglist*/
@@ -137,7 +139,7 @@ header a:hover{
 #mailinglist input[type="email"]{
 	padding: 4px;
 	height: 25px;
-	width: 250px;
+	width: 100%;
 }
 
 /*Sidebar*/
@@ -178,11 +180,66 @@ footer{
 
 /*Media Queries*/
 
-@media only screen and (max-width:768px;){
-	nav{
+@media screen and (max-width: 700px) {
+	header {
+		width: 100%
+	}
+	header #branding{
+		float: none;
+		width: 50%;
+		font-size: .5em;
+	}
+	header nav {
 		float:none;
 	}
 
-	nav a{
-		margin: 0 1.6em .75em 0;
+	nav a {
+		float: right;
+		width: 50%;
+		font-size: .75em;
 	}
+
+	#showcase h1{
+		width: 50%;
+		font-size: 1.4em;
+	}
+	#showcase p{
+		width: 50%
+	}
+	#showcase img {
+		width: 100%;
+	}
+	#boxes .box{
+		float: none;
+		width: 50%;
+		font-size: 1em;
+	}
+	#mailinglist h3{
+		float: none;
+	}
+
+	#mailinglist form{
+		float: none;
+		width: 50%;
+	}
+	#mailinglist input[type="email"]{
+	padding: 4px;
+	width: 50%;
+	}
+
+	aside#sidebar{
+	float: none;
+	width:50%;
+	margin-top:10px;
+	}
+	article#main-col{
+	float:none;
+	width:50%;
+	}
+	ul#contact li{
+	float: none;
+	width: 100%;
+	list-style: none;
+	padding:20px;
+	}
+}

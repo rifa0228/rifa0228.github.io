@@ -1,0 +1,245 @@
+body{
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+	padding: 0;
+	margin:0;
+	background-color: #f4f4f4;
+}
+
+/*Global*/
+.container{
+	width: 960px;
+	margin: auto;
+	overflow: hidden;
+}
+ul{
+	margin:0;
+	padding: 0;
+}
+
+.button_1{
+	height: 38px;
+	background:#052b05;
+	border:30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+}
+
+/*Header**/
+
+header{
+	background:#fff;
+	color: #052b05;
+	padding-top: 50px;
+	min-height: 180px;
+	border-bottom:#e8491d 3px solid;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+header img{
+	height: 150px;
+	float: left;
+	margin-left: 30px;
+}
+
+header a{
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+header ul{
+	font-weight: bold;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+ 
+ header #branding{
+ 	float: left;
+ }
+
+ header #branding h1{
+ 	margin:0;
+ }
+
+ header nav{
+ 	float: right;
+ 	margin-top: 20px;
+ }
+
+header .highlight, header .current a{
+	color: #e8491d;
+}
+
+header a:hover{
+	color: #32cd32;
+}
+
+/*Showcase */
+
+#showcase{
+	min-height: 400px;
+	background: url('../images/DSC_4458a.jpg')no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #000;
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 2.4em;
+	margin-bottom: 10px;
+	color: #0f4c02
+}
+
+#showcase p{
+	font-size: 1.2em;
+}
+
+/*Boxes*/
+
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding:10px;
+	display: block;
+}
+
+#boxes .box img{
+	width: 30%;
+}
+
+/*Mailinglist*/
+#mailinglist{
+	padding: 15px;
+	color: #fff;
+	background:#35424a;
+}
+#mailinglist h3{
+	float: left;
+}
+
+#mailinglist form{
+	float: right;
+	margin-top: 15px;
+}
+
+#mailinglist input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 100%;
+}
+
+/*Sidebar*/
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding:10px;
+
+}
+/*Main-col*/
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+/*Contact*/
+
+ul#contact li{
+	float: left;
+	width: 100%;
+	list-style: none;
+	padding:20px;
+}
+
+footer{
+	padding:20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #052b05;
+	text-align: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 700px) {
+	header {
+		width: 100%
+	}
+	header #branding{
+		float: none;
+		width: 50%;
+		font-size: .5em;
+	}
+	header nav {
+		float:none;
+	}
+
+	nav a {
+		float: right;
+		width: 50%;
+		font-size: .75em;
+	}
+
+	#showcase h1{
+		width: 50%;
+		font-size: 1.4em;
+	}
+	#showcase p{
+		width: 50%
+	}
+	#showcase img {
+		width: 100%;
+	}
+	#boxes .box{
+		float: none;
+		width: 50%;
+		font-size: 1em;
+	}
+	#mailinglist h3{
+		float: none;
+	}
+
+	#mailinglist form{
+		float: none;
+		width: 50%;
+	}
+	#mailinglist input[type="email"]{
+	padding: 4px;
+	width: 50%;
+	}
+
+	aside#sidebar{
+	float: none;
+	width:50%;
+	margin-top:10px;
+	}
+	article#main-col{
+	float:none;
+	width:50%;
+	}
+	ul#contact li{
+	float: none;
+	width: 100%;
+	list-style: none;
+	padding:20px;
+	}
+}
